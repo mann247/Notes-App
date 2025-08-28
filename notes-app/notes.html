@@ -1,0 +1,66 @@
+N Manning
+8-25-25
+Week 11 - 12
+
+Node Module System
+ - Allows the developer to load functionality into the app and use it to complete tasks
+ - Three ways
+    1. core node modules
+    2. third party modules
+    3. created from the developer
+
+
+~~~~~~~~~
+Core Modules
+- Some modules are available globally
+- Others are required to be loaded in.
+
+~~~~~~~~~
+File System Module
+- allows the developer to gain access to the operating systems file system
+- Asynchronous vs. Synchronous
+
+.writeFileSync = two arguments
+1. name of the file that you write to
+2. the data that you write
+    - responsible for writing data to a file
+        - if the file doesn't exist, it'll be created
+        - if it does exist, it will be overwritten
+
+Require Function: 
+    - how the developer loads in other things
+    - node module
+    - npm module
+    - a user created File
+
+appendFileSync
+- the name of the file you are trying to append
+
+~~~~~~~~~~
+
+Importing my own File
+
+when we pass a file to node, only that file executes
+if you want another file to run, you have to require the file to be loaded in.
+
+All files (modules) have their own scope
+
+Export
+    - module.exports 
+    - whatever is assigned is what is exported.
+    - exporting a function
+
+
+Do not edit node modules editor
+
+chalk
+- a utility that customizes how text is printed in the console.
+
+
+Section 4.
+command - what action you are trying to take when loading the program
+process.argv  = a property in Node.js that provides an array containing the command-line arguments passed when the Node.js
+process is launced.
+allows for a node.js application to access and utilize information provided by the user or another process at the time of execution
+
+yargs.parse()
